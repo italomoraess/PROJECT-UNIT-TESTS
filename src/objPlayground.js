@@ -33,13 +33,14 @@
   arrayGenerator('entries', { sum: 3, mult: 2, div: 1, sub: 0 }) // [ [ 'sum', 3 ], [ 'mult', 2 ], [ 'div', 1 ], [ 'sub', 0 ] ]
 */
 
-const calculator = (number1, number2) => {
-  return {
-  sum: number1 + number2,
-  mult: number1 * number2,
-  div: Math.trunc(number1 / number2),
-  sub: number1 - number2,
-  };
+const calculator = (valor1, number2) => {
+    let result = {
+      sum: valor1 + number2,
+      mult: valor1 * number2,
+      div: Math.trunc(valor1 / number2),
+      sub: valor1 - number2,
+      };
+  return result;
 };
 
 const arrayGenerator = (type, object) => {
